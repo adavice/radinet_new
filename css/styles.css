@@ -185,6 +185,10 @@ header .wrapper {
 
 }
 
+.main .third_block:last-of-type {
+	height: fit-content;
+}
+
 .desk-menu .button {
 	margin-top: 0px;
 	width: unset;
@@ -1983,25 +1987,25 @@ a.read_more {
 	padding: 0;
 }
 
-.article{
+.article {
 	box-shadow: 0px 4px 4px 0px rgba(55, 55, 55, 0.30);
 }
 
 .text-container {
 	padding: 20px;
-    display: flex;
-    flex-direction: column;
-    gap: 30px;
+	display: flex;
+	flex-direction: column;
+	gap: 30px;
 }
 
-.block_flex .column.colum_line{
+.block_flex .column.colum_line {
 	justify-content: space-between !important;
 }
 
-.blog .description{
+.blog .description {
 	padding: 0;
 }
 
-.article_page .column.big_article{
+.article_page .column.big_article {
 	max-width: 100%;
 }

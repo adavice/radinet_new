@@ -320,6 +320,14 @@
 		margin-bottom: 0px;
 	}
 
+	.blog .howWorks:first-of-type{
+		padding-bottom: 70px;
+	}
+
+	.clients_img{
+		display: block !important;
+	}
+
 	.halfblock {
 		height: 100vh;
 		background: linear-gradient(0deg, #000000c7, #000000c7), url(../img/23_image.jpg) no-repeat;
