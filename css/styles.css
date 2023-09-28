@@ -138,9 +138,11 @@ header .wrapper {
 
 .hero .button {
 	margin-top: 60px;
-	background: url(../img/icons/arow_white.svg);
+	/*background: url(../img/icons/arow_white.svg);
 	background-repeat: no-repeat;
-	background-position: 95% 50%;
+	background-position: 95% 50%;*/
+	display: flex;
+	justify-content: space-around;
 }
 
 .button {
@@ -220,10 +222,13 @@ header .wrapper {
 .submenu {
 	position: absolute;
 	left: 0px;
-	background: #fff;
+	background: #00112d;
 	cursor: pointer;
 	z-index: 40;
 	display: none;
+	top: 35px;
+	border: 3px solid var(--highlight);
+	border-bottom: none;
 }
 
 .submenu a {
@@ -236,12 +241,11 @@ header .wrapper {
 	position: relative;
 	font-size: 18px;
 	height: unset;
-	border-bottom: 4px solid #dfdfdf;
+	border-bottom: 3px solid var(--highlight);
 	width: 100%;
-
-	background: #fff;
+	background: #ffffff14;
 	transition: 0.5s;
-	font-weight: 600;
+	font-weight: 500;
 }
 
 .submenu li:hover {
@@ -305,6 +309,9 @@ header .wrapper {
 
 .social {
 	float: right;
+	display: flex;
+	align-items: center;
+	gap: 20px;
 }
 
 .social img {
@@ -314,7 +321,7 @@ header .wrapper {
 }
 
 .social a:first-child {
-	margin-right: 15px;
+	/*margin-right: 15px;*/
 
 }
 
@@ -612,9 +619,11 @@ form {
 .third_block a.button {
 	color: #226CDC;
 	border: 2px solid #226CDC;
-	background: url(../img/icons/arow_blue.svg);
+	/*background: url(../img/icons/arow_blue.svg);
 	background-repeat: no-repeat;
-	background-position: 95% 50%;
+	background-position: 95% 50%;*/
+	display: flex;
+	justify-content: space-around;
 }
 
 .third_block h3 {
@@ -675,9 +684,9 @@ footer .wrapper {
 }
 
 footer .social {
-	position: absolute;
+	/*position: absolute;
 	margin-top: 20px;
-	right: 0;
+	right: 0;*/
 }
 
 footer .rightblock a {
@@ -685,6 +694,8 @@ footer .rightblock a {
 	display: inline-block;
 	font-size: 14px;
 	text-transform: uppercase;
+	color: #fff;
+	font-weight: 500;
 }
 
 footer a {
@@ -693,6 +704,13 @@ footer a {
 
 footer a:visited {
 	color: var(--highlight);
+}
+
+.group_footer {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+    gap: 30px;
 }
 
 .copyright {
@@ -1937,6 +1955,8 @@ footer .button {
 	background: rgba(146, 202, 255, 0.10);
 	backdrop-filter: blur(7.5px);
 	border-color: #226CDC;
+	display: flex;
+	justify-content: space-around;
 }
 
 .white_line {

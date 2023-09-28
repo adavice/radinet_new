@@ -384,12 +384,12 @@
 	}
 
 	footer .social {
-		display: flex;
+		/*display: flex;
 		position: absolute;
 		left: 0;
 		bottom: -7px;
 		width: min-content;
-		height: min-content;
+		height: min-content;*/
 	}
 
 
