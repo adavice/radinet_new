@@ -1,4 +1,4 @@
-$(document).ready(function(){
+$(document).ready(function () {
     /*$(document).on('click', 'a[href^="#"]', function (event) {
         event.preventDefault();
 
@@ -7,15 +7,15 @@ $(document).ready(function(){
         }, 500);
     });*/
 
-    $('#services').hover(function() {
-        $('#services_sub').slideDown(200);
-    }, function(){
-        $('#services_sub').slideUp(50);
-        });
+    $("#services").hover(function () {
+        $("#services_sub").slideDown(200);
+    });
 
-
-
+    $("body").click(function () {
+        $("#services_sub").slideUp(200);
+    });
 });
+
 let today = new Date();
 let year = today.getFullYear();
 $('#year').text(year);
