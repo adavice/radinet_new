@@ -1,19 +1,19 @@
 $(document).ready(function () {
-    /*$(document).on('click', 'a[href^="#"]', function (event) {
-        event.preventDefault();
+  /*$(document).on('click', 'a[href^="#"]', function (event) {
+      event.preventDefault();
 
-        $('html, body').animate({
-            scrollTop: $($.attr(this, 'href')).offset().top
-        }, 500);
-    });*/
+      $('html, body').animate({
+          scrollTop: $($.attr(this, 'href')).offset().top
+      }, 500);
+  });*/
 
-    $("#services").hover(function () {
-        $("#services_sub").slideDown(200);
+  $(function () {
+    $('#services').hover(function () {
+      $(this).find('ul').first().stop().slideDown(200);
+    }, function () {
+      $(this).find('ul').stop().slideUp(50);
     });
-
-    $("body").click(function () {
-        $("#services_sub").slideUp(200);
-    });
+  });
 });
 
 let today = new Date();
