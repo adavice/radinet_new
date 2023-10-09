@@ -17,7 +17,7 @@
 	outline: none;
 }
 
-body {
+html, body {
 	overflow-x: hidden;
 }
 
@@ -335,17 +335,18 @@ a {
 }
 
 .main .hero {
-	background: url(../img/heder_4\ 1.png);
-	background-size: cover;
-	background-position: top;
+	background-color: #00112d;
 	display: block;
 	height: auto;
+	overflow: hidden;
+    position: relative;
 }
 
 .hero .wrapper {
 	display: flex;
 	height: 100%;
-
+	position: relative;
+	z-index: 10;
 }
 
 .hero .wrapper>div {
@@ -710,7 +711,7 @@ footer a:visited {
 	display: flex;
 	flex-direction: column;
 	align-items: center;
-    gap: 30px;
+	gap: 30px;
 }
 
 .copyright {
@@ -2029,4 +2030,29 @@ a.read_more {
 
 .article_page .column.big_article {
 	max-width: 100%;
+}
+
+.land__video {
+	position: absolute;
+    top: 0px;
+    left: 50%;
+    transform: translate(-50%);
+    width: 242.93vh;
+    min-width: 100%;
+    min-height: 51.56vw;
+    transition: opacity .6s ease-in;
+    opacity: 1;
+    z-index: 0;
+}
+
+.land__overlay {
+    position: absolute;
+    z-index: 2;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url(../img/heder_4\ 1.png);
+    background-repeat: repeat;
+	opacity: 50%;
 }
