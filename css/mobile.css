@@ -171,11 +171,10 @@
 
 	#submenu_mb li {
 		border-left: 2px solid #f0f0f0;
-
 		margin-left: 33%;
 		font-size: 16px;
 		font-weight: 600;
-		color: #005abb;
+		color: var(--highlight);
 	}
 
 	#submenu_mb li>a {
@@ -183,6 +182,7 @@
 		padding-left: 16px;
 		padding-top: 16px;
 		padding-bottom: 16px;
+		color: var(--highlight);
 	}
 
 	#submenu_mb li:first-child {
@@ -195,7 +195,7 @@
 	}
 
 	#submenu_mb li>a:visited {
-		color: #005abb;
+		color: var(--highlight);
 	}
 
 
