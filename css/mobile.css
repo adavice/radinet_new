@@ -170,7 +170,7 @@
 	}
 
 	#submenu_mb li {
-		border-left: 2px solid #f0f0f0;
+		border-left: 2px solid var(--highlight);
 		margin-left: 33%;
 		font-size: 16px;
 		font-weight: 600;
@@ -186,7 +186,7 @@
 	}
 
 	#submenu_mb li:first-child {
-		border-bottom: 1px solid #f0f0f0;
+		border-bottom: 1px solid var(--highlight);
 	}
 
 	#submenu_mb li>a:hover {
