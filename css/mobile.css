@@ -771,4 +771,21 @@
 		height: unset;
 
 	}
+
+	.block_two_line .article {
+		flex-direction: column;
+	}
+
+	.block_two_line .article .img.article_img {
+		width: 100%;
+		height: auto;
+	}
+
+	.article_page .column.big_article {
+		max-width: 100%;
+	}
+
+	.text-container.article-text {
+		padding: 20px 0;
+	}
 }
