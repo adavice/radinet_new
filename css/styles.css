@@ -23,22 +23,34 @@ body {
 }
 
 body {
-
+	margin: 0;
 	color: var(--main-color)
 }
 
-body,
 p,
 h1,
 h2,
 h3,
 h4,
 span,
+ul {
+	font-family: 'Darker Grotesque', sans-serif;
+	margin: 0;
+	padding: 0;
+}
+
+body,
+span,
 ul,
 textarea {
 	font-family: 'Open Sans', sans-serif;
-	margin: 0;
-	padding: 0;
+}
+
+.dark span,
+.hero ul,
+.terms-section span,
+.terms-section ul {
+	font-family: 'Darker Grotesque', sans-serif;
 }
 
 body,
@@ -109,12 +121,12 @@ h5 {
 
 h4::after {
 	content: "";
-    background: #226CDC;
-    width: 50px;
-    height: 1.5px;
-    right: 0px;
-    bottom: -10px;
-    position: absolute;
+	background: #226CDC;
+	width: 50px;
+	height: 1.5px;
+	right: 0px;
+	bottom: -10px;
+	position: absolute;
 }
 
 .wrapper {
@@ -135,12 +147,10 @@ header {
 	z-index: 90;
 	padding: 22px 0 0 0;
 	/*box-shadow: 0 0 10px -5px;*/
-}
-
-.blog header {
 	background: url(../img/heder_4\ 1.png);
 	background-size: cover;
 	background-position: top;
+	border-bottom: 1px solid var(--highlight);
 }
 
 header .wrapper {
@@ -354,7 +364,7 @@ a {
 
 .hero {
 	width: 100%;
-	height: calc(100vh - 170px);
+	height: calc(100vh - 20px);
 }
 
 .main .hero {
@@ -396,7 +406,7 @@ a {
 	-webkit-background-clip: text;
 	text-shadow: 0 9px 25px #1618175e;
 	text-align: left;
-	font-family: 'Open Sans', sans-serif;
+	/*font-family: 'Open Sans', sans-serif;*/
 }
 
 .iconsection {
@@ -450,7 +460,7 @@ a {
 	margin-bottom: 15px;
 	font-weight: 700;
 	font-size: 19px;
-	text-align: left;
+	/*text-align: left;*/
 }
 
 .iconbox img {
@@ -658,7 +668,6 @@ footer {
 	background-size: cover;
 	color: #fff;
 	height: fit-content;
-	padding: 50px 30px;
 	position: relative;
 }
 
@@ -690,7 +699,7 @@ footer {
 
 footer .wrapper {
 	position: relative;
-	padding: 0;
+	padding: 50px 30px;
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
@@ -751,6 +760,7 @@ footer a:visited {
 	overflow: hidden;
 	display: flex;
 	min-height: 700px;
+	background-size: cover;
 }
 
 .about .hero .wrapper {
@@ -783,7 +793,7 @@ footer a:visited {
 }
 
 .about .hero .about_text {
-	font-size: 16px;
+	font-size: 18px;
 	color: #fff;
 	margin: auto 0;
 	width: 50%;
@@ -1245,6 +1255,7 @@ body.contact>section:nth-child(5) {
 	color: var(--main-color);
 	display: flex;
 	background: linear-gradient(0deg, #ffffffbf, #ffffffbf), url(../img/contact_hero.jpg) center no-repeat;
+	background-size: cover;
 }
 
 .thx>div {
@@ -1252,12 +1263,10 @@ body.contact>section:nth-child(5) {
 }
 
 .thx h2 {
-	font-size: 24px;
+	font-size: 32px;
 	text-align: center;
 	margin-bottom: 30px;
 }
-
-
 
 /*POP UP*/
 
@@ -1328,7 +1337,7 @@ body.contact>section:nth-child(5) {
 /*========== TERMS ==========*/
 
 .terms-section {
-	padding: 70px 0;
+	padding: 140px 0;
 }
 
 .terms-section .wrapper {
@@ -1369,7 +1378,7 @@ body.contact>section:nth-child(5) {
 .ppc .hero {
 	background: linear-gradient(0deg, #ffffffe3, #ffffffe3), url(../img/digital.jpg) center no-repeat;
 	overflow: hidden;
-	height: 100vh;
+	height: calc(100vh - 20px);
 	display: flex;
 	background-size: cover;
 }
@@ -1380,13 +1389,14 @@ body.contact>section:nth-child(5) {
 
 .ppc .hero .wrapper {
 	display: flex;
-	height: 40vh;
-	min-height: 450px;
+	height: fit-content;
 	margin: auto;
 }
 
 .ppc .hero .button {
 	margin-top: 30px;
+	color: #226CDC;
+    border: 2px solid #226CDC;
 }
 
 .ppc .hero h3 {
@@ -2131,11 +2141,46 @@ p.article-data {
 	content: none;
 }
 
-.article-text img{
+.article-text img {
 	margin: 30px auto;
 }
 
-.column h3{
+.column h3 {
 	text-align: left;
 	padding-bottom: 20px;
+}
+
+#form2 input[type="submit"],
+form a.button {
+	margin-left: auto;
+	margin-right: auto !important;
+}
+
+.form_block h2 {
+	color: transparent;
+	background: var(--highlight-grad);
+	-webkit-background-clip: text;
+}
+
+.form_block .button,
+.halfblock .button {
+	color: #01f6e4;
+	border: 2px solid #01f6e4;
+}
+
+.button_block h2,
+.with_button h2 {
+	color: #226CDC;
+}
+
+.button_block .button,
+.with_button .button {
+	color: #226CDC;
+	border: 2px solid #226CDC;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.twoblocks p, .about_text p, .terms-section p, .half_info p{
+	font-size: 18px;
 }
