@@ -798,7 +798,7 @@ footer a:visited {
 	margin: auto 0;
 	width: 50%;
 	text-align: left;
-	height: 50vh;
+	height: fit-content;
 }
 
 .about_text p {
@@ -1443,7 +1443,7 @@ body.contact>section:nth-child(5) {
 	margin: 0;
 	width: 50%;
 	text-align: left;
-	height: 50vh;
+	height: fit-content;
 }
 
 .ppc .hero p {
